@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Work</title>
+    <link rel="stylesheet" href="./project.css">
+</head>
+
+<body>
+  
+
+  <nav class="navbar">
+    <div class="logo">Brew & Bloom</div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <button class="pro">Get Pro</button>
+    
+      
+    </ul>
+  </nav>
+  
+
+  <section class="hero">
+    <img class="img" src="pexels-chevanon-312418-removebg-preview.png">
+    <div class="text-container">
+      <h1>Welcome to Brew & Bloom</h1>
+      <p>Your cozy escape for handcrafted beverages and fresh blooms.</p>
+  </section>
+  </div>
+
+  <section class="price-cards">
+    <div class="card">
+      <h3>Espresso</h3>
+      <p>Rich and bold, a pure shot of coffee perfection.</p>
+      <div class="price">N9,560</div>
+    </div>
+
+    <div class="card">
+      <h3>Cappuccino</h3>
+      <p>Espresso with steamed milk and a thick frothy layer.</p>
+      <div class="price">N9,780</div>
+    </div>
+
+    <div class="card">
+      <h3>Latte</h3>
+      <p>Smooth espresso blended with creamy steamed milk.</p>
+      <div class="price">N7,880</div>
+    </div>
+
+    <div class="card">
+      <h3>The Pink Drink</h3>
+      <p>Smooth,Tasty And delicous milk with a Splash of <em>Colourful Pink.</em></p>
+      <div class="price">N14,000</div>
+    </div>
+
+    
+
+  </section>
+
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      
+    }
+
+    h1 {
+      text-align: center;
+      color: brown;
+    }
+
+    #searchInput {
+      display: block;
+      margin: 20px auto;
+      padding: 10px;
+      width: 60%;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .pro{
+      background-color: rgb(240, 134, 134);
+      border: none;
+      border-radius: 10px;
+      width: 60px;
+      height: 20px;
+    }
+
+    ul#menu {
+      list-style: none;
+      padding: 0;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    ul#menu li {
+      background-color: #fff;
+      padding: 15px 20px;
+      margin: 10px 0;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      font-size: 18px;
+    }
+
+    ul#menu li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out;
+}
+
+
+
+
+    .category {
+      font-weight: bold;
+      margin-top: 30px;
+      text-align: center;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Coffee & Cookie Menu</h1>
+  
+  <input type="text" id="searchInput" onkeyup="searchMenu()" placeholder="Search for coffee or cookies...">
+
+  <div class="category">☕ Coffees</div>
+  <ul id="menu">
+    <li>Espresso</li>
+    <li>Americano</li>
+    <li>Latte</li>
+    <li>Cappuccino</li>
+    <li>Mocha</li>
+    <li>Macchiato</li>
+    <li>Flat White</li>
+    <li>Cold Brew</li>
+    <li>Iced Coffee</li>
+    <li>Affogato</li>
+  </ul>
+
+  <div class="category">🍪 Cookies</div>
+  <ul id="menu">
+    <li>Chocolate Chip Cookie</li>
+    <li>Oatmeal Raisin Cookie</li>
+    <li>Peanut Butter Cookie</li>
+    <li>White Chocolate Macadamia Cookie</li>
+    <li>Snickerdoodle</li>
+    <li>Double Chocolate Cookie</li>
+    <li>Gingerbread Cookie</li>
+    <li>Shortbread Cookie</li>
+    <li>Sugar Cookie</li>
+    <li>Molasses Cookie</li>
+  </ul>
+
+  <script>
+    function searchMenu() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const items = document.querySelectorAll('#menu li');
+
+      items.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(input) ? '' : 'none';
+      });
+    }
+  </script>
+
+</body>
+</html>
+
+<section class="blabla">
+  <h3>At Brew & Bloom, we combine the art of coffee brewing with the beauty of fresh flowers. Visit us to enjoy a
+          unique experience full of warmth, aroma, and nature.</h3>
+
+          <h1 >Customers Must drop A 15,000 Tip For The Website</h1>
+</section>
+
+
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>About Brew & Bloom</h4>
+        <p>At Brew & Bloom, we combine the art of coffee brewing with the beauty of fresh flowers. Visit us to enjoy a
+          unique experience full of warmth, aroma, and nature.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <p><a href="#">Home</a></p>
+        <p><a href="#">About Us</a></p>
+        <p><a href="#">Contact</a></p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <p>Email: info@brewandbloom.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Linkelden"><i class="fa-brands fa-linkedin"></i></i></a>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+ 
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById("navLinks");
+      navLinks.classList.toggle("active");
+    }
+  </script>
+
+   
+
+</body>
+
+</html>
